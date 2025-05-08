@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* outline: solid; */
+            font-family: Noto Sans TC;
+            text-decoration: none;
+            list-style-type: none;
+        }
+
+        ul.wrap {
+            display: flex;
+            flex-wrap: wrap;
+            /* width: 100%; */
+            width: 1350px;
+            margin: 0 auto;
+            margin-top: 20px;
+            padding: 20px;
+            /* background-color: #f0f0f0; */
+            /* justify-content: flex-start; */
+            /* justify-content: space-around; */
+            justify-content: center;
+        }
+
+        li>h2{
+            width: 95%;
+            font-size: 28px;
+        }
+
+        li.container {
+            font-size: 16px;
+            line-height: 1.5;
+            width: calc(33.3%);
+            /* max-width: 1200px; */
+            margin: 0 auto;
+            margin-top: 20px;
+            /* margin-left: 1px; */
+            padding: 10px;
+            /* background-color: #fff; */
+            /* border: 1px solid #ddd; */
+            border-radius: 8px;
+            /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+        }
+
+        /* 幫我寫RWD */
+        /* @media (max-width: 768px) {
+            .wrap {
+                width: 100%;
+                padding: 0 10px;
+            }
+
+            .container {
+                width: calc(50% - 10px);
+                margin-left: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                width: 100%;
+                margin-left: 0;
+            }
+        } */
+
+        .container>img {
+            width: 100%;
+            height: auto;
+            /* border-radius: 8px; */
+        }
+
+        .container>p>span {
+            color: blue;
+        }
+
+        li.container>p.content {
+            /* height: 72px; */
+            /* overflow: hidden; */
+            /* color: red; */
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            /* 顯示 3 行，多的省略 */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 16px;
+            letter-spacing: 0;
+            margin-top: 8px;
+            color: #4b4b4b;
+
+        }
+
+        .date{
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0;
+            margin-top: 10px;
+        }
+
+        .tag>a{
+            font-size: 24px;
+            line-height: 1.5;
+            letter-spacing: 0;
+            margin-top: 10px;
+            
+        }
+
+        /* li.container>p.content::after {
+            content: "...";
+            display: block;
+            height: 20px;
+            width: 100%;
+            background-color: #000;
+            position: relative;
+            bottom: 0;
+        } */
+他
+        .container>p:last-of-type {
+            margin-top: 16px;
+        }
+
+        .container>p:last-child>a {
+            display: inline-block;
+            margin-top: 16px;
+            color: #999;
+            border: 1px solid #000;
+            border-radius: 20px;
+            padding: 5px 10px;
+        }
+
+        .container:last-child {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="wrap">
+        <li class="container">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/blog/photo4.png?raw=true"
+                alt="範例圖片">
+            <p class="date">2024/10/10/11</p>
+            <p class="tag"><a href="">#React</a> <a href="">#入門基礎</a></p>
+            <h2>React 入門不再迷惘: 三步驟帶你上手核心概念</h2>
+            <p class="content">你是否對 React 感到好奇，卻苦惱於該如何 正式啟動學習之路?身為前端工程師兼職涯諮詢師，我常遇到同學問我...</p>
+            <p><a href="#">閱讀更多</a></p>
+        </li>
+        <li class="container">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/blog/photo1.png?raw=true"
+                alt="範例圖片">
+            <p>2024/09/07</p>
+            <p class="tag"><a href="">#作品集</a> <a href="">#求職攻略</a></p>
+            <h2>前端作品集打造指南：讓你的專案成為履歷亮點</h2>
+            <p class="content">對正在求職的前端工程師而言，作品集往往是第一個「說話」的利器。當面試官瀏覽你的網頁作品時，能夠快速了解</p>
+            <p><a href="#">閱讀更多</a></p>
+        </li>
+        <li class="container">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/blog/photo2.png?raw=true"
+                alt="範例圖片">
+            <p>2024/09/03</p>
+            <p class="tag"><a href="">#CSS設計</a> <a href="">#視覺體驗</a></p>
+            <h2>CSS 魔法大揭密：排版與設計的三大關鍵技巧</h2>
+            <p class="content">在瀏覽器畫面上實現各種精美介面，一直是前端開發充滿成就感的部分。但當面臨複雜的佈局需求或是響應式設計時，</p>
+            <p><a href="#">閱讀更多</a></p>
+        </li>
+        <li class="container">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/blog/photo6.png?raw=true"
+                alt="範例圖片">
+            <p class="date">2024/06/29</p>
+            <p class="tag"><a href="">#轉職工程師</a> <a href="">#學習心法</a></p>
+            <h2>前端轉職必讀：從自學者到工程師的心路歷程</h2>
+            <p class="content">能夠憑藉自學進入前端領域，聽起來令人振奮，但實際過程中可能遇到的挫折與疑慮，卻常常令人猶豫。回想當初我也</p>
+            <p><a href="#">閱讀更多</a></p>
+        </li>
+        <li class="container">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/blog/photo3.png?raw=true"
+                alt="範例圖片">
+            <p>2024/07/09</p>
+            <p class="tag"><a href="">#面試準備</a> <a href="">#工程師求職</a></p>
+            <h2>前端面試不再慌：破解常見提問的三大策略</h2>
+            <p class="content">面試前端工程師時，你或許擔心被問到各種刁鑽的技術題目，或是擔憂無法在短時間內展現實力。其實，許多面試官</p>
+            <p><a href="#">閱讀更多</a></p>
+        </li>
+        <li class="container">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/blog/photo5.png?raw=true"
+                alt="範例圖片">
+            <p>2024/07/08</p>
+            <p class="tag"><a href="">#Vue3</a> <a href="">#框架學習</a></p>
+            <h2>Vue 3 新手指南：快速掌握 Composition API 與關鍵特色</h2>
+            <p class="content">許多前端開發者對 Vue 一直情有獨鍾，因為它易上手又靈活。隨著 Vue 3 上線，Composition API 的導入更是大幅</p>
+            <p><a href="#">閱讀更多</a></p>
+        </li>
+        <!-- <div class="container">
+            <img src="https://images.pexels.com/photos/414611/pexels-photo-414611.jpeg" alt="範例圖片">
+            <p>2024/10/10/11</p>
+            <p><a href="">#React</a> <a href="">#入門基礎</a></p>
+            <h2>React 入門不再迷惘: 三步驟帶你上手核心概念</h2>
+            <p>你是否對 React 感到好奇，卻苦惱於該如何 正式啟動學習之路?身為前端工程師兼職涯諮詢師，我常遇到同學問我....</p>
+            <p><a href="#">閱讀更多</a></p>
+        </div> -->
+    </ul>
+    <script>
+
+    </script>
+</body>
+
+</html>
